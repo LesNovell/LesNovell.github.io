@@ -1,0 +1,36 @@
+<script src="navbar.js"></script>
+<script src="navbar.controller.js"></script>
+
+<nav class="navbar navbar-default navbar-subnav navbar-fixed-top" role="navigation" ng-controller="ResearchNavbarController" style="top: 72px; padding-left: 140px">
+    <div class="container">
+        <!--<div class="navbar-header">-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+            <!--&lt;!&ndash;<img class="pull-left" src="assets/images/logo.png" width="100px"/>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a class="navbar-brand" href="#"><span>Rancho Research Foundation</span></a>&ndash;&gt;-->
+        <!--</div>-->
+        <div class="collapse navbar-collapse" id="navbar-collapse" ng-switch="isAuthenticated()">
+            <ul class="nav navbar-nav nav-pills navbar-left navbar-subnav-list">
+                <!--<li style="background-color:rgba(0, 100, 255, .15);"><a ui-sref="#donate"> <span></span> </a></li>-->
+                <li><a ui-sref="#"> <span>Researchers</span> </a></li>
+                <li><a ui-sref="#"> <span>CP Education</span> </a></li>
+                <li><a ui-sref="#"> <span>RoboCamp</span> </a></li>
+                <li><a ui-sref="#"> <span>Projects</span> </a></li>
+                <li><a ui-sref="#"> <span>Sci Model Systems</span> </a></li>
+                <li><a ui-sref="#"> <span>Educational Materials</span> </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-pills">
+                <li>
+                    <!--<a ui-sref="donate" class="pull-right" style="background-color: royalblue">-->
+                        <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                        <!--<span>How to Give</span>-->
+                    <!--</a>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

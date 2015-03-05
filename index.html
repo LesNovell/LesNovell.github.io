@@ -1,234 +1,149 @@
-<!DOCTYPE html>
-<!--
-    Copyright 2015 Novell Technology
--->
-<html>
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-    <title>Novell Technology, Inc.</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Expletus+Sans:700,400' rel='stylesheet' type='text/css'>
-    <link href="novell.css" rel="stylesheet" type="text/css">
-</head>
-
-<body id="page">
-
-<div id="app">
-    <div id="banner">
-        <img id="banner-image" align="left" src="LogoN3.png"/>
-
-        <div id="banner-text">
-            <span id="banner-text-major">Novell Technology, Inc.</span><br>
-        </div>
-        <div id="banner-links">
-            <a href="mailto:LesNovell@gmail.com" style="color">LesNovell@gmail.com</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="twitter-icon.png" height="30px" width="30px"/>
-            &nbsp;&nbsp;
-            <a href="http://www.linkedin.com/in/LesNovell">
-                <img src="linkedin.png" height="30px" width="30px"/>
-            </a>
-            &nbsp;&nbsp;
-            <a href="mailto:LesNovell@gmail.com"><img src="email.png" height="30px" width="30px"/></a>
-        </div>
-    </div>
-    <div id="nav-nav">
-        <div id="content">
-
-            <div class="content-row">
-                <div id="mainBody">
-                    We Develop Software
-                    <br>
-                            <span style="font-size: 14px;">
-                            Web / Cloud &#8226; Mobile Apps &#8226; Desktop &#8226; Server
-                            </span>
-                    <br>
-                </div>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>rancho</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css assets/styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css' />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css assets/styles/main.css -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Exo:400' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>-->
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+<body ng-app="ranchoApp" style="font-family: 'Arvo', sans-serif;">
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+    <div ui-view="navbar" ng-cloak=""></div>
+    <div ui-view="subnavbar" ng-cloak=""></div>
+    <div class="" style="font-family: 'Exo', sans-serif;">
+        <div ui-view="content"></div>
+        <div class="footer-push"></div>
+        <div class="footer">
+            <div class="footer-contact">
+                <a href="">Contact Us</a>
+                <br/>
+                Rancho Research Foundation<br/>
+                7601 East Imperial Highway<br/>
+                Downey, CA 90242
             </div>
-
-            <div class="content-row">
-                <div id="mainBody2">
-                    We Build Insanely Great Software
-                    <br>
-                    Rapid Delivery using Agile Methods
-                    <br>
-                    Modern Technology and Design
-                    <br>
-                </div>
+            <div class="footer-links">
+                <a href="http://www.facebook.com/Ranchoresearchfoundation">
+                    <img width="30px" src="assets/images/social/Facebook_circle_pictogram.svg.png"/>
+                </a>
+                <a href="http://twitter.com/RanchoRF">
+                    <img width="30px" src="assets/images/social/Twitter_circle.png"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UChEdLQaXCAANfGSbC4Zoffg">
+                    <img width="30px" src="assets/images/social/200px-Youtube_icon.svg.png"/>
+                </a>
+                <a href="http://instagram.com/ranchoref/">
+                    <img width="30px" src="assets/images/social/instagram_circle.png"/>
+                </a>
             </div>
-
-            <div class="content-row">
-                <div id="mainBody3">
-                    <div style="display:table; width:100%">
-                        <div style="display: table-row;width:100%">
-
-                            <div style="display:table-cell;width:50%; text-align: right; padding-right: 10px">
-                                <div style="clear: both">
-                                    <img src="mobile.png" width="150px" height="150px" align="right"/>
-
-                                    <div style="line-height: 20px;padding-top:50px">
-                                        Mobile Development
-                                        <div style="font-size:14px; color:lightgray">iOS, Android, Tablets</div>
-                                    </div>
-                                    <div style="clear: both">
-                                        <img src="webdesign_icon.png" width="150px" height="150px" align="right"/>
-
-                                        <div style="line-height: 20px;padding-top:50px">
-                                            Web Development
-                                            <div style="font-size:14px; color:lightgray">HTML5, Node.js, AngularJS,
-                                                Python, Ruby, PHP
-                                            </div>
-                                            <div style="font-size:14px; color:lightgray">Amazon EC2, Cloud Foundry,
-                                                Google App Engine
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <br>
-
-                            <div style="display:table-cell;width:50%; padding-left: 10px">
-                                <div style="clear: both">
-                                    <img src="appdesign_icon.png" width="150px" height="150px" align="left"/>
-
-                                    <div style="line-height: 20px;padding-top:50px">
-                                        Tools and Automation
-                                        <div style="font-size:14px; color:lightgray">Continuous Build and Automated
-                                            Deployment
-                                        </div>
-                                        <div style="font-size:14px; color:lightgray">Jenkins, Hudson, Unit Testing,
-                                            Git
-                                        </div>
-                                    </div>
-                                    <div style="clear: both">
-                                        <img src="strategy_icon.png" width="150px" height="150px" align="left"/>
-
-                                        <div style="line-height: 20px;padding-top:50px">
-                                            Architecture and Design
-                                            <div style="font-size:14px; color:lightgray">Tech Stack Selection, Design
-                                                Patterns, Scalable Architectures
-                                            </div>
-                                            <div style="font-size:14px; color:lightgray">Microservices, Messaging, Web
-                                                Components, Security
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-row">
-                <div id="mainBody4">
-                    <div style="display:table-row">
-                        <div style="display:table-cell; vertical-align: middle">
-                            <div style="background-color:#d2d2d2; color:#e7a100; margin: 5px; width:350px; height:350px; border-radius: 50%; border: 4px solid #e7a100;
-                                  background-image: url('Les.png'); background-position: 15px; background-position-y: 10px; background-size: 100%; background-repeat: no-repeat">
-                            </div>
-                        </div>
-
-                        <div style="display: table-cell; padding-left: 50px; vertical-align: top">
-                            Les Novell
-                            <br>
-                            Founder, Chief Architect
-                            <div style="font-size: 14px; line-height: 16px; margin-right: 75px">
-                                Over 15 years of software experience building large software systems for a diverse range
-                                of
-                                customers
-                                <br>
-                                <br>
-                                <span style="font-size: 20px; font-weight: 700">Experience</span>
-                                <br>Bachelors degree in Computer Science, UC Irvine
-                                <br>
-                                <br>
-                                <b>Intuit, Inc. :  5 Years</b>
-                                <br>Staff Engineer, Scalability and Team Lead (TurboTax and Payments Division)
-                                <br>
-                                <br>
-                                <b>Motorola, Inc. : 2 Years</b>
-                                <br>Software
-                                Engineering
-                                Manager, Wireless Server Software Division
-                                <br>
-                                <br>
-                                <b>4thpass, Inc. : 3 Years </b>
-                                <br>
-                                Senior Engineer, Mobile Startup
-                                <br>
-                                <br>
-                                <b>Agile Experience : 8 Years </b>
-                                <br>
-                                Building teams, setting best practices, and
-                                employing continuous build tools and test frameworks
-                                <br>
-                                <br>
-                                <br>
-                                <span style="font-size: 20px; font-weight: 700">I'm Excited About!</span>
-                                <br>
-                                <b>{ Design and Architecture }</b>
-                                <br>
-                                SOA, Micro-Services, Object-Oriented Design Patterns, Async Messaging, Scalability,
-                                Fault-Tolerance
-                                <br>
-                                <br>
-                                <b>{ Great Technologies }</b>
-                                <br>Java, AngularJS, Node.JS, Hibernate, Apache Camel, ActiveMQ, Oracle/MySQL/MongoDB, Git,
-                                iOS,
-                                Android
-                                <br>
-                                <br>
-                                <b>{ Cloud & Infrastructure }</b>
-                                <br>
-                                Amazon Web Services, Cloud Foundry, Splunk, Introscope, Jenkins/Hudson, Maven, Bower
-                                <br>
-                                <br>
-                                <b>{ Agile Development }</b>
-                                <br>
-                                Customer Value, Iterative Development, Automated Testing, Continuous Builds
-                                <br>
-                                <br>
-                                <b>{ Non-Technical }</b>
-                                <br>
-                                Swimming, Scuba-Diving, Biking, Kayaking, Movies
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="content-row">
-                <div id="mainBody5">
-
-                </div>
-            </div>
-
-            <div class="content-row">
-                <div id="mainBody6">
-                    <img src="phone_white_big.png" width="80px" height="80px"/>
-                    <span style="background-color: rgba(78, 78, 78, 0.50); padding: 10px;">818-962-0314</span>
-
-                </div>
-            </div>
-
-
         </div>
     </div>
-</div>
+<!-- Google Analytics: uncomment and change UA-XXXXX-X to be your site's ID.
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>-->
 
-<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
-<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.js"></script>-->
-<!--<script src="ui-bootstrap-tpls.js"></script>-->
-<!--<script src="ui-bootstrap.js"></script>-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
-<!--<script src="velocity.min.js"></script>-->
-<!--<script src="novell.js"></script>-->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/modernizr/modernizr.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+<script src="bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+<script src="bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/angular-cache-buster/angular-cache-buster.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
+
+<!-- build:js({.tmp,src/main/webapp}) scripts/app.js -->
+<script src="scripts/app/app.js"></script>
+<script src="scripts/app/app.constants.js"></script>
+<script src="scripts/components/auth/auth.service.js"></script>
+<script src="scripts/components/auth/principal.service.js"></script>
+<script src="scripts/components/auth/services/account.service.js"></script>
+<script src="scripts/components/auth/services/activate.service.js"></script>
+<script src="scripts/components/auth/services/password.service.js"></script>
+<script src="scripts/components/auth/services/register.service.js"></script>
+<script src="scripts/components/form/form.directive.js"></script>
+<script src="scripts/components/language/language.service.js"></script>
+<script src="scripts/components/language/language.controller.js"></script>
+<script src="scripts/components/admin/audits.service.js"></script>
+<script src="scripts/components/admin/logs.service.js"></script>
+<script src="scripts/components/admin/configuration.service.js"></script>
+<script src="scripts/components/admin/monitoring.service.js"></script>
+<script src="scripts/components/navbar/navbar.directive.js"></script>
+<script src="scripts/components/navbar/navbar.controller.js"></script>
+<script src="scripts/components/util/truncate.filter.js"></script>
+<script src="scripts/components/util/base64.service.js"></script>
+<script src="scripts/app/account/account.js"></script>
+<script src="scripts/app/account/activate/activate.js"></script>
+<script src="scripts/app/account/activate/activate.controller.js"></script>
+<script src="scripts/app/account/login/login.js"></script>
+<script src="scripts/app/account/login/login.controller.js"></script>
+<script src="scripts/app/account/logout/logout.js"></script>
+<script src="scripts/app/account/logout/logout.controller.js"></script>
+<script src="scripts/app/account/password/password.js"></script>
+<script src="scripts/app/account/password/password.controller.js"></script>
+<script src="scripts/app/account/password/password.directive.js"></script>
+<script src="scripts/app/account/register/register.js"></script>
+<script src="scripts/app/account/register/register.controller.js"></script>
+<script src="scripts/app/account/settings/settings.js"></script>
+<script src="scripts/app/account/settings/settings.controller.js"></script>
+<script src="scripts/app/admin/admin.js"></script>
+<script src="scripts/app/admin/audits/audits.js"></script>
+<script src="scripts/app/admin/audits/audits.controller.js"></script>
+<script src="scripts/app/admin/configuration/configuration.js"></script>
+<script src="scripts/app/admin/configuration/configuration.controller.js"></script>
+<script src="scripts/app/admin/docs/docs.js"></script>
+<script src="scripts/app/admin/health/health.js"></script>
+<script src="scripts/app/admin/health/health.controller.js"></script>
+<script src="scripts/app/admin/logs/logs.js"></script>
+<script src="scripts/app/admin/logs/logs.controller.js"></script>
+<script src="scripts/app/admin/metrics/metrics.js"></script>
+<script src="scripts/app/admin/metrics/metrics.controller.js"></script>
+<script src="scripts/app/entities/entity.js"></script>
+<script src="scripts/app/error/error.js"></script>
+<script src="scripts/app/main/main.js"></script>
+<script src="scripts/app/main/main.controller.js"></script>
+<script src="scripts/components/auth/services/sessions.service.js"></script>
+<script src="scripts/components/auth/provider/auth.session.service.js"></script>
+<script src="scripts/app/account/sessions/sessions.js"></script>
+<script src="scripts/app/account/sessions/sessions.controller.js"></script>
+<!-- endbuild -->
 </body>
 </html>
