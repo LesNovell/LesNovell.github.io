@@ -7,29 +7,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div style="position:absolute;left:5px;top:1px;opacity: .9; z-index: 100">
-            <img class="pull-left" src="assets/images/logo.png" height="100px"/>
-            </div>
+
             <!--<a class="navbar-brand" href="#"><span>Rancho Research Foundation</span></a>-->
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse" ng-switch="isAuthenticated()">
-            <ul class="nav navbar-nav nav-pills navbar-right">
+            <ul class="nav navbar-nav navbar-right nav-pills">
                 <li>
-                    <a ui-sref="home">
-                        <span>HOME</span>
-                    </a>
-                </li>
-                <li>
-                    <a ui-sref="contact">
-                        <span>CONTACT</span>
+                    <a ui-sref="donate">
+                        <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                        <span>How to Give</span>
                     </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right nav-pills">
                 <li>
-                    <a ui-sref="donate" class="pull-right" style="background-color: royalblue">
+                    <a ui-sref="community">
                         <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
-                        <span>How to Give</span>
+                        <span>Our Community</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-pills">
+                <li>
+                    <a ui-sref="research">
+                        <!--<span class="glyphicon glyphicon-thumbs-up"></span>-->
+                        <span>The Science</span>
                     </a>
                 </li>
             </ul>

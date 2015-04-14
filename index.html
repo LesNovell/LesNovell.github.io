@@ -21,18 +21,28 @@
     <!-- endbuild -->
     <!-- build:css assets/styles/main.css -->
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Exo:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Marmelad' rel='stylesheet' type='text/cess'>
+    <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+    <!--<link href='http://fonts.googleapis.com/css?family=Oxygen:400' rel='stylesheet' type='text/css'>-->
+    <!--<link href='http://fonts.googleapis.com/css?family=Exo:400' rel='stylesheet' type='text/css'>-->
     <!--<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>-->
     <!--<link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>-->
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-<body ng-app="ranchoApp" style="font-family: 'Arvo', sans-serif;">
+    <!--<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>-->
+<body ng-app="ranchoApp">
 <!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+
     <div ui-view="navbar" ng-cloak=""></div>
     <div ui-view="subnavbar" ng-cloak=""></div>
-    <div class="" style="font-family: 'Exo', sans-serif;">
+    <div>
         <div ui-view="content"></div>
         <div class="footer-push"></div>
         <div class="footer">
@@ -145,5 +155,9 @@
 <script src="scripts/app/account/sessions/sessions.js"></script>
 <script src="scripts/app/account/sessions/sessions.controller.js"></script>
 <!-- endbuild -->
+
+<div style="position:fixed;left:15px;top:1px;opacity: .85; z-index: 100000">
+    <img ui-sref="home" class="pull-left" src="assets/images/logo.png" height="85px"/>
+</div>
 </body>
 </html>

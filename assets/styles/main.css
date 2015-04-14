@@ -2,6 +2,7 @@ body {
     background: #fafafa;
     color: #333;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /* ==========================================================================
@@ -15,34 +16,49 @@ Hide ng-cloak on page load, https://docs.angularjs.org/api/ng/directive/ngCloak
 Version number in navbar
 ========================================================================== */
 .navbar {
-    background-color:rgba(0, 100, 255, .45);
+    background-color:rgba(239, 219, 156, .75);
     border-bottom: 0px;
+}
+
+.nav-pills > li > a {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 0%;
+    margin-top: 10px;
+    padding: 15px 10px 10px 10px;
+    /*padding-top: 14px;*/
+
+    /*background-color: rgba(210, 107, 131, .85);*/
+    background-color: rgba(255, 255, 255, .50);
+    /*background-color: rgba(239, 219, 156, .50);*/
+
 }
 
 .navbar-nav {
     margin-top: 12px;
     margin-left: 15px;
     font-size: 18px;
-    font-family: 'Exo', sans-serif;
 }
 
 .navbar-subnav {
-    /*background-color:rgba(0, 100, 255, .30) !important;*/
-    margin-top: 0;
-    margin-left: -130px;
-    /*max-height: 5px !important;*/
+    min-height: 30px !important;
+    margin-top: -5px;
+    margin-left: -80px;
+    /*background-color: rgba(0,0,0,.25);*/
 }
 
 .navbar-subnav > div > div > ul > li > a {
     margin-left: 5px;
     margin-top: -10px;
-    font-size:15px;
+    font-size:17px;
     font-weight: bold;
     color: #d26b83 !important;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
+    color: #000000;
+    /*background-color: rgba(239, 219, 156, .2);;*/
     margin-right: 10px;
 }
 
@@ -56,14 +72,19 @@ Version number in navbar
 
 .carousel-caption {
     /*top: 350px;*/
+    left:35%;
+    right:35%;
+    width: 30%;
     bottom: -25px;
-    font-size: 30px;
+    font-size: 20px;
+    /*font-size: 30px;*/
     padding-top: 5px;
     -webkit-transition-property: bottom;
     transition-property: bottom;
     transition-timing-function: ease-in-out;
-    background-color: rgba(0,100,255,.35);
-    border-radius: 30px;
+    background-color: rgba(239, 219, 156, .45);
+    color: rgba(6,37,66,1);
+    border-radius: 15px;
 }
 
 
@@ -91,12 +112,14 @@ Version number in navbar
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #d7d7d7;
+    background-color: rgba(6,37,66,1);
+    color: rgba(239,219,256,1);
     border-color: #898989;
     border-width: 0px;
     border-style: solid;
     border-top-width: 1px;
     border-bottom-width: 1px;
+    font-size: 16px;
 }
 
 .footer-contact {
@@ -119,6 +142,7 @@ Version number in navbar
     -webkit-transition-property: opacity;
     transition-property: opacity;
     transition-timing-function: ease-in-out;
+
 }
 .carousel-fade .carousel-inner .active {
     opacity: 1;
